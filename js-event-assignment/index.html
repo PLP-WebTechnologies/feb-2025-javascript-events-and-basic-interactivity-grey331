@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Friendship Playground</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>🌟 Friendship Interactive Playground 🌟</h1>
+    <p>Explore the joy of interaction and connection!</p>
+  </header>
+
+  <main>
+    <!-- 1. Event Handling -->
+    <section class="card">
+      <h2>🎈 Event Handling</h2>
+      <button id="clickBtn">Click Me!</button>
+      <div id="hoverArea">Hover over me!</div>
+      <p id="keyPressed">Press any key...</p>
+      <button id="secretBtn">Secret Button (try long press or double click)</button>
+    </section>
+
+    <!-- 2. Interactive Elements -->
+    <section class="card">
+      <h2>🎮 Interactive Elements</h2>
+      <button id="colorTextBtn">Change Color/Text</button>
+      <div class="gallery">
+        <img id="galleryImage" src="https://images.pexels.com/photos/1255062/pexels-photo-1255062.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Friends Image"/>
+        <div>
+          <button id="prevBtn">Prev</button>
+          <button id="nextBtn">Next</button>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tabBtn" data-tab="1">Friends</button>
+        <button class="tabBtn" data-tab="2">Memories</button>
+        <button class="tabBtn" data-tab="3">Messages</button>
+        <div class="tabContent" id="tab-1">True friends lift you higher! 💖</div>
+        <div class="tabContent" id="tab-2">Bike rides, laughs, and late-night talks. 🚴</div>
+        <div class="tabContent" id="tab-3">You’ve got a message of joy! 📬</div>
+      </div>
+    </section>
+
+    <!-- 3. Form Validation -->
+    <section class="card">
+      <h2>📋 Sign Up Form</h2>
+      <form id="signupForm" novalidate>
+        <label>Email: <input type="email" id="email" required /></label>
+        <small id="emailMsg"></small>
+
+        <label>Password: <input type="password" id="password" required minlength="8" /></label>
+        <small id="passMsg"></small>
+
+        <button type="submit">Join the Friendship Circle 💞</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>Made with ❤️ for best friends everywhere.</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
